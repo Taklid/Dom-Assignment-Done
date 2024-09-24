@@ -52,18 +52,25 @@ if(inputAreaEl > addEl){
       
       
 
-      const historyAreaEl =document.getElementById('div');
+      const historyAreaEl =document.createElement('div');
       historyAreaEl.className ="lg:w-[800px] lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto";
      //  historyContainer.classList.remove('hidden')
       historyAreaEl.innerHTML=`
 
       <p class="text-gray-800 font-bold">${new Date().toLocaleDateString()}</p>
-      <p class="text-gray-600 font-bold">Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
       
       `
       const historyContainer =document.getElementById('history-container');
-      historyContainer.insertBefore(historyAreaEl, historyContainer.appendChild);
+      historyContainer.insertBefore(historyAreaEl, historyContainer.firstChild);
      //  historyContainer.classList.remove('hidden')
+     // const historyBtn =document.getElementById('history-btn');
+     // historyBtn.addEventListener('click', function(){
+     //      historyContainer.classList.remove('hidden')
+     // })
+
+     
+
     
    
     
@@ -116,6 +123,18 @@ if(inputAreaEl > addEl){
 
           
       })
+
+      const historyAreaEl =document.createElement('div');
+      historyAreaEl.className ="lg:w-[800px] lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto";
+     //  historyContainer.classList.remove('hidden')
+      historyAreaEl.innerHTML=`
+
+      <p class="text-gray-800 font-bold">${new Date().toLocaleDateString()}</p>
+      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      
+      `
+      const historyContainer =document.getElementById('history-container');
+      historyContainer.insertBefore(historyAreaEl, historyContainer.firstChild);
     
    
     
@@ -167,21 +186,56 @@ if(inputAreaEl > addEl){
 
           
       })
+
+
+      const historyAreaEl =document.createElement('div');
+      historyAreaEl.className ="lg:w-[800px] lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto";
+     //  historyContainer.classList.remove('hidden')
+      historyAreaEl.innerHTML=`
+
+      <p class="text-gray-800 font-bold">${new Date().toLocaleDateString()}</p>
+      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      
+      `
+      const historyContainer =document.getElementById('history-container');
+      historyContainer.insertBefore(historyAreaEl, historyContainer.firstChild);
+    
     
    
     
-})
-
-const historyBtnEl =document.getElementById('history-btn');
-const donationBtnEl =document.getElementById('donation-btn')
-historyBtnEl.addEventListener('click', function(){
+})   
+     const historyAreaElE=document.getElementById('history-area');
+     const closeEl =document.getElementById('close');
+     const closeTwo =document.getElementById('close-2') 
+     const closeThree =document.getElementById('close-3') 
+    const historyBtnEl =document.getElementById('history-btn');
+     const donationBtnEl =document.getElementById('donation-btn')
+     historyBtnEl.addEventListener('click', function(){
      historyBtnEl.classList.add('bg-[#B4F461]', 'text-black');
      donationBtnEl.classList.remove('bg-[#B4F461]', 'text-black');
      donationBtnEl.classList.add('bg-[#1111114D]')
+     
+     
+     historyAreaElE.classList.remove('hidden');
+     closeEl.classList.add('hidden');
+     closeTwo.classList.add('hidden');
+     closeThree.classList.add('hidden');
     
      
      
 })
+
+
+donationBtnEl.addEventListener('click', function(){
+     closeEl.classList.remove('hidden');
+     closeTwo.classList.remove('hidden');
+     closeThree.classList.remove('hidden');
+     historyAreaElE.classList.add('hidden');
+     donationBtnEl.classList.add('bg-[#B4F461]', 'text-black');
+     historyBtnEl.classList.r('bg-[#B4F461]', 'text-black');
+
+})
+
 
 
 // blog button area
@@ -189,6 +243,7 @@ historyBtnEl.addEventListener('click', function(){
 const blogBtnEl =document.getElementById('blog-btn');
 blogBtnEl.addEventListener('click', function(){
      window.location.href ='./faq.html';
+     
 
      
 })

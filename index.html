@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="">
     
     <main class="max-w-[1200px] mx-auto">
-        <nav class="mx-auto text-center lg:flex justify-between mt-[30px] sticky top-0 z-50 bg-slate-500 backdrop-blur-lg bg-opacity-30 rounded-[5px] overflow-hidden">
+        <nav class="mx-auto text-center lg:flex justify-between  sticky top-0 z-50 bg-slate-500 backdrop-blur-lg bg-opacity-30 rounded-[5px]">
             <button id="blog-btn" class="w-[90px] h-[40px] bg-[#B4F461] rounded-lg">Blog</button>
             <div class="lg:flex lg:items-center text-center mx-auto">
                 <div class="">
@@ -36,7 +36,7 @@
         </nav>
         <!-- section area 1 -->
          <section class="">
-            <div class="flex mt-[20px] ">
+            <div class="flex mt-[20px]  ">
                 <!-- preant div area -->
                  <div class="mx-auto text-center gap-[20px]">
                     <button id="donation-btn" class="mx-auto text-center w-[90px] h-[30px] bg-[#B4F461] rounded-lg">Donation</button>
@@ -46,7 +46,7 @@
          </section>
          <section class="mt-[50px]">
             <!-- section area 2 -->
-             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
+             <div id="close" class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
                 <!-- preant area -->
                  <div>
                     <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/noakhali.png" alt="">
@@ -97,7 +97,7 @@
             </section>
              
 
-             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center lg:mt-[30px]">
+             <div id="close-2" class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center lg:mt-[30px]">
                 <!-- preant area -->
                  <div>
                     <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/feni.png" alt="">
@@ -146,7 +146,7 @@
               </div>
             </dialog>
             </section>
-             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
+             <div id="close-3" class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
                 <!-- preant area -->
                  <div>
                     <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/quota-protest.png" alt="">
@@ -212,15 +212,15 @@
              <!-- history & donation area -->
               <div>
                 <!-- first area -->
-                <div class="flex mt-[20px] hidden">
-                    <!-- preant div area -->
+                <!-- <div class="flex mt-[20px] hidden">
+                     preant div area
                      <div class="mx-auto text-center gap-[20px]">
                         <button class="mx-auto text-center w-[90px] h-[30px] bg-[#1111114D] rounded-lg">Donation</button>
                         <button class="mx-auto text-center w-[90px] h-[30px] bg-[#B4F461] rounded-lg">History</button>
                      </div>
-                </div>
+                </div> -->
 
-                <div id="history-area" class="hidden lg:w-[800px] lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto">
+                <div id="history-area" class="hidden lg:w-[800px] lg:h-[70px] w-[300px] rounded-[5px] mt-[20px] mx-auto">
                     <div id="history-container" >
                         <!-- <p class="ml-[10px] font-bold">Taka is Donated for famine-2024 at Feni, Bangladesh</p>
                         <p class="ml-[10px]">Date : GMT +0600 (Bangladesh Standard Time)</p> -->
