@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloge</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="max-w-[1200px] mx-auto">
+        <nav class="mx-auto text-center lg:flex justify-between mt-[30px]">
+            <button id="home-btn" class="w-[90px] h-[40px] bg-[#B4F461] rounded-lg">Home</button>
+            <div class="lg:flex lg:items-center text-center mx-auto">
+                <div class="">
+                    <img class="text-center mx-auto w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]" src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <p class="text-center mx-auto">Donate Bangladesh</p>
+                </div>
+            </div>
+            <div class="lg:flex lg:items-center">
+                <!-- preant area -->
+                <div>
+                    <img class="text-center mx-auto" src="./assets/coin.png" alt="">
+                </div>
+                <div>
+                    <p  class="text-[#111111B3] text-center mx-auto "><span id="total-ammount">5500</span> BDT</p>
+                </div>
+            </div>
+        </nav>
+            <!-- section area 1 -->
+         <section>
+            <div class="flex mt-[20px]">
+                <!-- preant div area -->
+                 <div class="mx-auto text-center gap-[20px]">
+                    <button id="donation-btn" class="mx-auto text-center w-[90px] h-[30px] bg-[#B4F461] rounded-lg">Donation</button>
+                    <button id="history-btn" class="mx-auto text-center w-[90px] h-[30px] bg-[#1111114D] rounded-lg">History</button>
+                 </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+         </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <main class="max-w-[1200px] mx-auto">
+        <nav class="mx-auto text-center lg:flex justify-between mt-[30px] sticky top-0 z-50 bg-slate-500 backdrop-blur-lg bg-opacity-30 rounded-[5px]">
+            <button id="blog-btn" class="w-[90px] h-[40px] bg-[#B4F461] rounded-lg">Blog</button>
+            <div class="lg:flex lg:items-center text-center mx-auto">
+                <div class="">
+                    <img class="text-center mx-auto w-[30px] h-[30px] lg:w-[40px] lg:h-[40px]" src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <p class="text-center mx-auto">Donate Bangladesh</p>
+                </div>
+            </div>
+            <div class="lg:flex lg:items-center">
+                <!-- preant area -->
+                <div>
+                    <img class="text-center mx-auto" src="./assets/coin.png" alt="">
+                </div>
+                <div>
+                    <p  class="text-[#111111B3] text-center mx-auto "><span id="total-ammount">5500</span> BDT</p>
+                </div>
+            </div>
+            
+            
+        </nav>
+        <!-- section area 1 -->
+         <section>
+            <div class="flex mt-[20px]">
+                <!-- preant div area -->
+                 <div class="mx-auto text-center gap-[20px]">
+                    <button id="donation-btn" class="mx-auto text-center w-[90px] h-[30px] bg-[#B4F461] rounded-lg">Donation</button>
+                    <button id="history-btn" class="mx-auto text-center w-[90px] h-[30px] bg-[#1111114D] rounded-lg">History</button>
+                 </div>
+            </div>
+         </section>
+         <section class="mt-[50px]">
+            <!-- section area 2 -->
+             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
+                <!-- preant area -->
+                 <div>
+                    <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/noakhali.png" alt="">
+                 </div>
+                 <div class="mx-auto mt-[30px]">
+                    <div class="">
+                        <div>
+                            
+                        </div>
+                        <div class="flex w-[90px] h-[40px] bg-[#1111110D] items-center rounded-[5px]">
+                            <img class="h-[30px]" src="./assets/coin.png" alt="">
+                            <p id="donate-tk">0 BDT</p>
+                        </div>
+                    </div>
+                    <h1 class="lg:w-[450px] w-[250px]  font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="lg:w-[350px] w-[250px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need</p>
+                    <div class="grid grid-cols-1">
+                        <div>
+                            <input class="border border-lime-200 lg:w-[350px] w-[250px]" type="text" name="" id="input-area" placeholder="Write Donation Amount">
+                        </div>
+                        <div class="mt-[20px]">
+                            <button id="donate-btn" class="lg:w-[350px] w-[250px] bg-[#B4F461] rounded-[3px] font-bold">Donate Now</button>
+                        </div>
+                    </div>
+                    
+                    
+                 </div>
+                 
+             </div>
+             <section class="">
+                <!-- Open the modal using ID.showModal() method -->
+              <!-- <button class="" id="donate-modal"  onclick="my_modal_5.showModal()">open modal</button> -->
+             <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle"> -->
+              <div id="donate-modal" class="modal-box w-[300px] mx-auto bg-gray-600 shadow-amber-950 -mt-[270px] opacity-90 hidden">
+                <div class="mx-auto text-center ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                </div>
+                <h3 class="text-lg font-bold text-center text-green-600">Congratulation</h3>
+                <p class="py-4 text-center text-green-600">Your Payment Sucsessfull</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="close-btn" class="btn lg:mr-[50px] mr-[65px] bg-green-600 ">Close information</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            </section>
+             
+
+             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center lg:mt-[30px] mt-[335px]">
+                <!-- preant area -->
+                 <div>
+                    <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/feni.png" alt="">
+                 </div>
+                 <div class="mx-auto mt-[30px]">
+                    <div class="">
+                        <div>
+                            
+                        </div>
+                        <div class="flex w-[90px] h-[40px] bg-[#1111110D] items-center rounded-[5px]">
+                            <img class="h-[30px]" src="./assets/coin.png" alt="">
+                            <p id="donate-tk-s">0 BDT</p>
+                        </div>
+                    </div>
+                    <h1 class="lg:w-[450px] w-[250px]  font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="lg:w-[350px] w-[250px]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <div class="grid grid-cols-1">
+                        <div>
+                            <input class="border border-lime-200 lg:w-[350px] w-[250px]" type="text" name="" id="input-area-s" placeholder="Write Donation Amount">
+                        </div>
+                        <div class="mt-[20px]">
+                            <button id="donate-btn-s" class="lg:w-[350px] w-[250px] bg-[#B4F461] rounded-[3px] font-bold">Donate Now</button>
+                        </div>
+                    </div>
+                    
+                    
+                 </div>
+                 
+             </div>
+             <section class="">
+                <!-- Open the modal using ID.showModal() method -->
+              <!-- <button class="" id="donate-modal"  onclick="my_modal_5.showModal()">open modal</button> -->
+             <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle"> -->
+              <div id="donate-modal-s" class="modal-box w-[300px] mx-auto bg-gray-600 shadow-amber-950 -mt-[270px] opacity-90 hidden">
+                <div class="mx-auto text-center ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                </div>
+                <h3 class="text-lg font-bold text-center text-green-600">Congratulation</h3>
+                <p class="py-4 text-center text-green-600">Your Payment Sucsessfull</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="close-btn-s" class="btn lg:mr-[50px] mr-[65px] bg-green-600 ">Close information</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            </section>
+             <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[0px] items-center mt-[30px]">
+                <!-- preant area -->
+                 <div>
+                    <img class="w-[300px] h-[200px] lg:w-[400px] lg:h-[300px] mx-auto lg:mr-[45px]" src="./assets/quota-protest.png" alt="">
+                 </div>
+                 <div class="mx-auto mt-[30px]">
+                    <div class="">
+                        <div>
+                            
+                        </div>
+                        <div class="flex w-[90px] h-[40px] bg-[#1111110D] items-center rounded-[5px]">
+                            <img class="h-[30px]" src="./assets/coin.png" alt="">
+                            <p id="donate-tk-last">0 BDT</p>
+                        </div>
+                    </div>
+                    <h1 class="lg:w-[450px] w-[250px]  font-bold">Aid for Injured in the Quota Movement</h1>
+                    <p class="lg:w-[350px] w-[250px]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <div class="grid grid-cols-1">
+                        <div>
+                            <input class="border border-lime-200 lg:w-[350px] w-[250px]" type="text" name="" id="input-area-last" placeholder="Write Donation Amount">
+                        </div>
+                        <div class="mt-[20px]">
+                            <button id="donate-btn-last" class="lg:w-[350px] w-[250px] bg-[#B4F461] rounded-[3px] font-bold">Donate Now</button>
+                        </div>
+                    </div>
+                    
+                    
+                 </div>
+                 
+             </div>
+             <section class=""></section>
+                <!-- Open the modal using ID.showModal() method -->
+              <!-- <button class="" id="donate-modal"  onclick="my_modal_5.showModal()">open modal</button> -->
+             <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle"> -->
+              <div id="donate-modal-t" class="modal-box w-[300px] mx-auto bg-gray-600 shadow-amber-950 -mt-[270px] opacity-90 hidden">
+                <div class="mx-auto text-center ">
+                    <i class="fa-solid fa-circle-check text-green-500"></i>
+                </div>
+                <h3 class="text-lg font-bold text-center text-green-600">Congratulation</h3>
+                <p class="py-4 text-center text-green-600">Your Payment Sucsessfull</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="close-btn-t" class="btn lg:mr-[50px] mr-[65px] bg-green-600 ">Close information</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            </section>
+             
+             
+             
+             
+             
+             
+         </section>
+
+         <!-- Modal area -->
+
+
+
+         <section class="mt-[50px]">
+            <!-- section area 3 -->
+             <!-- history & donation area -->
+              <div>
+                <!-- first area -->
+                <div class="flex mt-[20px]">
+                    <!-- preant div area -->
+                     <div class="mx-auto text-center gap-[20px]">
+                        <button class="mx-auto text-center w-[90px] h-[30px] bg-[#1111114D] rounded-lg">Donation</button>
+                        <button class="mx-auto text-center w-[90px] h-[30px] bg-[#B4F461] rounded-lg">History</button>
+                     </div>
+                </div>
+
+                <div id="history-area" class=" lg:w-[800px] lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto">
+                    <div id="history-container" >
+                        <!-- <p class="ml-[10px] font-bold">Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+                        <p class="ml-[10px]">Date : GMT +0600 (Bangladesh Standard Time)</p> -->
+                    </div>
+                    <!-- <div class="lg:w-[800px] hidden lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto">
+                        <p class="ml-[10px] font-bold">6500 Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+                        <p class="ml-[10px]">Date : GMT +0600 (Bangladesh Standard Time)</p>
+                    </div> -->
+                    <!-- <div class="lg:w-[800px] hidden lg:h-[70px] w-[300px] border border-gray-400 rounded-[5px] mt-[20px] mx-auto">
+                        <p class="ml-[10px] font-bold">15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+                        <p class="ml-[10px]">Date : GMT +0600 (Bangladesh Standard Time)</p>
+                    </div> -->
+                </div>
+              </div>
+         </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
