@@ -58,7 +58,7 @@ if(inputAreaEl > addEl){
       historyAreaEl.innerHTML=`
 
       <p class="text-gray-800 font-bold">${new Date().toLocaleDateString()}</p>
-      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donate for Flood at Noakhali, Bangladesh</p>
       
       `
       const historyContainer =document.getElementById('history-container');
@@ -186,6 +186,7 @@ if(inputAreaEl > addEl){
 
           
       })
+      
 
 
       const historyAreaEl =document.createElement('div');
@@ -194,7 +195,7 @@ if(inputAreaEl > addEl){
       historyAreaEl.innerHTML=`
 
       <p class="text-gray-800 font-bold">${new Date().toLocaleDateString()}</p>
-      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+      <p class="text-gray-600 font-bold">${inputAreaEl.toFixed(2)}Taka is Aid for Injured in the Quota Movement</p>
       
       `
       const historyContainer =document.getElementById('history-container');
@@ -232,7 +233,7 @@ donationBtnEl.addEventListener('click', function(){
      closeThree.classList.remove('hidden');
      historyAreaElE.classList.add('hidden');
      donationBtnEl.classList.add('bg-[#B4F461]', 'text-black');
-     historyBtnEl.classList.r('bg-[#B4F461]', 'text-black');
+     historyBtnEl.classList.remove('bg-[#B4F461]', 'text-black');
 
 })
 
@@ -248,11 +249,12 @@ blogBtnEl.addEventListener('click', function(){
      
 })
 
-const homeBtnEl =document.getElementById('home-btn');
-homeBtnEl.addEventListener('click', function(){
-     window.location.href ='./index.html';
-     console.log(homeBtnEl);
-})
+// const homeBtnEl =document.getElementById('home-btn');
+// homeBtnEl.addEventListener('click', function(){
+//      window.location.href ='./index.html';
+//      console.log(homeBtnEl);
+     
+// })
 
 
 // let isBlog =false;
